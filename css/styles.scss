@@ -1,3 +1,4 @@
+/* General */
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
@@ -17,6 +18,19 @@ h2 {
     font-weight: 600;
 }
 
+button {
+    all: unset;
+}
+
+
+/* Bootstrap edits */
+.form-control {
+    margin-bottom: 13px;
+    border-radius: 0px;
+}
+
+
+/* Top */
 .header {
     text-align: center;
     color: white;
@@ -35,51 +49,28 @@ h2 {
 
 
 
-
-
-
-
-.button1 {
-    padding-top: 50px;
-    width: 192px;
-    height: 45px;
-    background: #227dd3;
-    border: none;
-    border-radius: 0;
-    font-size: 21px;
-    color: white;
-
-    &:hover {
-        background: #1c69b1;
-    }
-}
-
-
-
-
+/* Sections */
 .section1 {
     margin-top: -221px;
+
+    .section1__form-block {
+        width: 334px;
+        height: 334px;
+        background: white;
+        border: 1px solid rgba(0, 0, 0, 0.192);
+        border-radius: 3px;
+
+        .section1__form-block__form {
+            padding-top: 30px;
+            padding-bottom: 24px;
+        }
+
+        .section1__form-block__info {
+            padding-top: 27px;
+            padding-bottom: 5px;
+        }
+    }
 }
-
-.form1 {
-    width: 334px;
-    height: 334px;
-    background: white;
-    border: 1px solid rgba(0, 0, 0, 0.192);
-    border-radius: 3px;
-}
-
-.forma {
-    padding-top: 30px;
-    padding-bottom: 24px;
-}
-
-.info1 {
-    padding-top: 27px;
-    padding-bottom: 5px;
-}
-
-
 
 
 
@@ -87,11 +78,11 @@ h2 {
     padding-top: 50px;
     height: 280px;
     background: #ffffff;
-}
 
-.image {
-    float: left;
-    margin-right: 30px;
+    .section2__image {
+        float: left;
+        margin-right: 30px;
+    }
 }
 
 
@@ -101,13 +92,13 @@ h2 {
     width: 100%;
     height: 921px;
 
-    .mobile-bg {
+    .section3__mobile-bg {
         transform: translate(150px, 0px);
         position: relative;
         z-index: 1;
     }
 
-    .section3-content {
+    .section3__content {
         color: white;
         margin-top: -330px;
         position: relative;
@@ -128,7 +119,6 @@ h2 {
 
 
 
-
 .section4 {
     margin-top: -350px;
     position: relative;
@@ -138,13 +128,13 @@ h2 {
     width: 100%;
     z-index: 1;
 
-    .pc-bg {
+    .section4__pc-bg {
         transform: translate(-250px, 490px);
         position: relative;
         z-index: 1;
     }
 
-    .section4-content {
+    .section4__content {
 
         width: 50%;
         color: white;
@@ -170,7 +160,7 @@ h2 {
 
 .section5 {
 
-    .form2 {
+    .section5__form-block {
         border-radius: 50%;
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
         background-color: rgb(255, 255, 255);
@@ -181,21 +171,16 @@ h2 {
         z-index: 4;
     }
 
-    .forma2 {
+    .section5__form-block__form {
         padding-top: 115px;
         padding-bottom: 24px;
     }
 
-    .form-control {
-        margin-bottom: 13px;
-        border-radius: 0px;
-    }
-
-    .form-control-message {
+    .form-control__message {
         height: 80px;
     }
 
-    .button-submit {
+    .form__button-submit {
         width: 66px;
         height: 67px;
         outline: none;
@@ -203,9 +188,6 @@ h2 {
 }
 
 
-button {
-    all: unset;
-}
 
 footer {
     background-color: rgb(67, 160, 109);
